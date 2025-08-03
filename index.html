@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Ball Sort Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Color Ball Sort</h1>
+        <div class="game-info">
+            <div class="level">Level: <span id="levelCount">1</span></div>
+            <div class="moves">Moves: <span id="moveCount">0</span></div>
+            <button id="resetBtn" class="btn">Reset Game</button>
+            <button id="newGameBtn" class="btn">New Game</button>
+        </div>
+        
+        <div class="tubes-container" id="tubesContainer">
+            <!-- Tubes will be generated dynamically -->
+        </div>
+        
+        <div class="message" id="message"></div>
+        
+        <div class="instructions">
+            <h3>How to Play:</h3>
+            <ul>
+                <li>Click on a tube to select the top ball</li>
+                <li>Click on another tube to move the ball there</li>
+                <li>You can only place a ball on top of the same color or in an empty tube</li>
+                <li>Sort all balls so each tube contains only one color</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
